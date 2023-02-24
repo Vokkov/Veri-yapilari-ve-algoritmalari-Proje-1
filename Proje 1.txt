@@ -1,0 +1,59 @@
+Soru 1:
+[22,27,16,2,18,6] -> Insertion Sort
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+1.	Average case: Aradığımız sayının ortada olması
+2.	Worst case: Aradığımız sayının sonda olması
+3.	Best case: Aradığımız sayının dizinin en başında olması.
+CEVAP:
+
+[22,27,16,2,18,6]
+
+// ilk sorting 22 için yapılır:
+[22,27,16,2,18,6]
+// ikinci olarak 27 için yaparız:
+[22,27,16,2,18,6]
+// üçüncü olarak 16 için yaparız:
+[22,16,27,2,18,6]
+[16,22,27,2,18,6]
+// dördüncü olarak 2 için yaparız:
+[16,22,2,27,18,6]
+[16,2,22,27,18,6]
+[2,16,22,27,18,6]
+// beşinci olarak 18 için yaparız:
+[2,16,22,18,27,6]
+[2,16,18,22,27,6]
+// altıncı olarak 6 için yaparız:
+[2,16,18,22,6,27]
+[2,16,18,6,22,27]
+[2,16,6,18,22,27]
+[2,6,16,18,22,27]
+
+
+Big-O notation= O(n^2)dir
+
+18 sayısı average case kapsamına girer çünkü sıralandıktan sonra sıranın ortasında yer almaktadır.
+
+
+
+Soru 2: [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+CEVAP:
+
+Her adımda en küçük sayıyı bularak sıralama yapmamız gerekir. 
+
+[7,3,5,8,2,9,4,15,6]
+
+Birinci adım : [2,3,5,8,7,9,4,15,6]
+İkinci adım : [2,3,5,8,7,9,4,15,6]
+Üçüncü adım: [2,3,4,8,7,9,5,15,6]
+Dördüncü adım : [2,3,4,5,7,9,8,15,6]
+
+şeklinde sonuçlanır.
+
+
+
+
+
+
